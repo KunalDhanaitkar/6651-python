@@ -5,28 +5,23 @@
 # Course: 6651-02; Introduction to Script Programming/Python
 # Submitted to: Professor Gulnora Nurmatova
 
-# Using the typing package, to be able to specify a list of str's in a type hint.
-from typing import List
+# Declaring Variables
+s="codeleet"
+indices = [4,5,6,7,0,2,1,3]
 
-# This class provides function which returns the shuffled string.
-class Solution:
+# Variable to contain all the individual characters of a string in a list.
+t = list(s)
+# Counts the characters in the string.
+l = len(s)
 
-    # Defining function which takes a string and indices of the string as input and returns the shuffled string.
-    def restoreString(self, s: str, indices: List[int]) -> str:
+# For loop that iterates over all the characters of the string.
+for i in range(l):
 
-        # Variable to contain all the individual characters of a string in a list.
-        t = list(s)
-        # Counts the characters in the string.
-        l = len(s)
+    # Places all the characters of the string on their respective positions using indices.
+    t[indices[i]] = s[i]
 
-        # For loop that iterates over all the characters of the string.
-        for i in range(l):
-
-            # Places all the characters of the string on their respective positions using indices.
-            t[indices[i]] = s[i]
-
-        # Joins all the shuffled characters together.
-        return "".join(t)
+    # Joins all the shuffled characters together and prints them out as output.
+    print ("".join(t))
 
 
 
