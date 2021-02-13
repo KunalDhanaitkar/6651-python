@@ -1,4 +1,4 @@
-# Assignment 3 (Part B) 
+# Assignment 3 (Part B) - Prints out the string that contains all the keywords in the string the user entered.
 # Name: Kunal Dhanaitkar
 # UNH ID: 00722835
 # Major: Computer Science
@@ -88,7 +88,7 @@ data_list=["And now here is my secret, a very simple secret: It is only with the
 "It's good to have a friend. Even if you're going to die.",
 "If you love a flower that lives on a star, then it's good at night, to look up at the sky. All the stars are blossoming."]
 
-# Prompts the user to enter input.
+# Prompts the user to enter input, splits each word and stores it as a list.
 query=input("query:").split()
 print(query)
 
@@ -96,7 +96,7 @@ print(query)
 new_list=[string for string in data_list if all(word in string for word in query)]
 
 # Condition to print the string that contain all the keywords.
-for quote in data_list:
+for quote in new_list:
 	print("Found:", ".."+str(new_list))
 	break
 

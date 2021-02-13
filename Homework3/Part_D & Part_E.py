@@ -1,4 +1,4 @@
-# Assignment 3 (Part D and E)
+# Assignment 3 (Part D and E) - Introducing OR operator to search 2 keywords from the strings in data_list.
 # Name: Kunal Dhanaitkar
 # UNH ID: 00722835
 # Major: Computer Science

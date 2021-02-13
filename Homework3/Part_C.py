@@ -1,4 +1,4 @@
-# Assignment 3 (Part C)
+# Assignment 3 (Part C) - Displays out no results found if the search was empty.
 # Name: Kunal Dhanaitkar
 # UNH ID: 00722835
 # Major: Computer Science
