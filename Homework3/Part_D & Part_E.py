@@ -1,4 +1,4 @@
-# Assignment 3 (Part A) - Query Search Program with the Search Case InSensitive
+# Assignment 3 (Part D and E)
 # Name: Kunal Dhanaitkar
 # UNH ID: 00722835
 # Major: Computer Science
@@ -88,18 +88,13 @@ data_list=["And now here is my secret, a very simple secret: It is only with the
 "It's good to have a friend. Even if you're going to die.",
 "If you love a flower that lives on a star, then it's good at night, to look up at the sky. All the stars are blossoming."]
 
-# Query Search Program with the Search Case InSensitive
-# Prompts the user to input query and lowers all characters using the lower() function.
-query=input("query:").lower()
+# Prompts the user to enter 2 query words to search for.
+query1=input("keyword1:")
+query2=input("keyword2:")
 
-# Declaring another list which contains only the lowercase strings from the first datalist.
-data_list1=[index.lower() for index in data_list]
+# Declaring another list storing strings which include both the query keywords entered by the user.
+new_list = [string for string in data_list if (string.find(query1) != -1 or string.find(query2) != -1)]
 
-# Condition to look for the strings user entered in the new datalist we declared.
-for quote in data_list1:
-	# Declaring a variable which looks up for the strings the user entered using the find function.
-	found_at = quote.find(query)
-
-	# If found, prints the available strings to the user.
-	if( found_at >= 0):
-		print("Found:", "..."+quote[found_at:found_at+50], "...")
+# Condition to print the string that contain all the keywords.
+for quote in new_list:
+	print("Found:", quote, "...")
