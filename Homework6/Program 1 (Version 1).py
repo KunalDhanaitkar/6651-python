@@ -1,4 +1,4 @@
-# Assignment 6 - (Program 1) - Program that takes a command line argument, search for a file in a directory and Prints True/False if a file is available.
+# Assignment 6 - (Program 1) - Program that takes a command line argument, search for a file in a directory and Prints True/False if the file is available.
 # Name: Kunal Dhanaitkar
 # UNH ID: 00722835
 # Major: Computer Science
