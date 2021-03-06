@@ -40,7 +40,7 @@ def decorate_it1(func):  # decorator function 1 for shelve
     return newfunction1  # returning the new function
 
 
-def decorate_it2(func):  # decorator function 2 for shelve
+def decorate_it2(func):  # decorator function 2 for dictionary
     def newfunction2():  # creating a new function
         print("\nOperation on a dictionary: ")
         dictfunc()
