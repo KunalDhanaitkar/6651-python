@@ -14,21 +14,20 @@ import shelve
 
 def shelfunc():  # Shelve Function
     db = shelve.open('C:/Users/kunal/test', 'c')
-    db['bob'] = {'shoesize': 42, 'gender': 'm'}
-    db['bob']
-    {'shoesize': 42, 'gender': 'm'}
-    db['bob']['gender'] = 'u'
-    db['bob']
-    {'shoesize': 42, 'gender': 'm'}
-    db['bob'] = {'shoesize': 42, 'gender': 'u'}
-    db['bob']
-    {'shoesize': 42, 'gender': 'u'}
+    db['soccer'] = {'ManU': 0, 'Liverpool': 0}
+    db['soccer']
+    {'ManU': 0, 'Liverpool': 0}
+    db['soccer']['ManU'] = 1
+    db['soccer']
+    {'ManU': 0, 'Liverpool': 0}
+    db['soccer'] = {'ManU': 1, 'Liverpool': 0}
+    db['soccer']
+    {'ManU': 1, 'Liverpool': 0}
 
 
-def dictfunc(): # Dictionary Function
+def dictfunc():  # Dictionary Function
     Dict = {1: 'My', 2: 'Name', 3: 'is', 4: 'Kunal'}
-    # Deleting a key
-    # using pop() method
+    # deleting a key using pop() method
     Dict.pop(4)
 
 
